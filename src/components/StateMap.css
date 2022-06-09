@@ -1,0 +1,11 @@
+.state-map svg{
+    max-width: 100%;
+}
+
+.state-map path{
+    fill: lightgray;
+}
+
+.state-map path:hover{
+    fill: rgb(47, 226, 214);
+}
