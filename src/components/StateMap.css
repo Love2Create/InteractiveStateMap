@@ -1,11 +1,19 @@
 .state-map svg{
     max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    resize: both;
+    margin: 0 auto;
 }
+/* .state-map svg{
+    max-width: 100%;
+} */
 
-.state-map path{
-    fill: lightgray;
-}
+/* .state-map path{
+    fill: #c4c0bc;
+} */
 
 .state-map path:hover{
-    fill: rgb(47, 226, 214);
+    fill: #1ca2ab;
 }

@@ -1,6 +1,8 @@
 import StateMap from './components/StateMap';
 import axios from 'axios';
 import { useState } from 'react';
+import DataTable from './components/DataTable';
+import StateDropdownBtn from './components/StateDropdownBtn';
 
 function App() {
 
@@ -12,7 +14,9 @@ function App() {
 
   return (
     <div>
+      <StateDropdownBtn stateMapData={data} />
       <StateMap stateMapData={data} />
+      <DataTable stateMapData={data} />
     </div>
   );
 }

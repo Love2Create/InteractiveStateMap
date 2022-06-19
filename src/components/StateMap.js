@@ -1,5 +1,6 @@
 import { useState} from 'react';
 import './StateMap.css';
+import Legend from './Legend';
 
 const StateMap = (props) => {
 
@@ -25,6 +26,9 @@ const StateMap = (props) => {
                     id={item} 
                     key={item} 
                     d={props.stateMapData[item].shape} 
+                    fill={props.stateMapData[item].acres === "0" ? "#c4c0bc" : "#988c83" }
+                    stroke="white"
+                    strokeWidth="2px"
                     acres={props.stateMapData[item].acres}
                     onMouseEnter={mouseEnterHandler}
                     onMouseLeave={mouseLeaveHandler}
@@ -32,8 +36,7 @@ const StateMap = (props) => {
                 />)}
             </svg>
             <div>
-                <p>State: {currentState}</p>
-                <p>Acres: {currentAcres}</p>
+                <Legend />
             </div>
         </div>
     );
