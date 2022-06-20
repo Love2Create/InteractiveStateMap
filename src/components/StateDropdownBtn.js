@@ -2,12 +2,17 @@ import './StateDropdownBtn.css';
 
 const StateDropdownBtn = (props) => {
 
+   const stateSelectHandler = (e) => {
+    // console.log(e.target.value);
+    props.onStateSelectHandler(e.target.value);
+   }
+
     return(
         <form className="StateDropdownBtn-wrapper">
-            <select id="stateName">
-            {Object.keys(props.stateMapData).map (item =>
+            <select id="stateName" value={props.selectedState} onChange={stateSelectHandler}>
+            {Object.keys(props.stateMapData).filter(item => props.stateMapData[item].acres != "0").map (item =>
                 <option key={item} value={item}>
-                    {item}
+                    {item} | {props.stateMapData[item].acres} acres
                 </option>
             )}
             </select>

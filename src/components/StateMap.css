@@ -14,6 +14,26 @@
     fill: #c4c0bc;
 } */
 
-.state-map path:hover{
+.state-map path.selected{
     fill: #1ca2ab;
+}
+
+.hoverMsg{
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
+.hoverMsg.hide{
+    display: none;
+}
+
+@media screen and (min-width: 700px)  {
+    .hoverMsg{
+        display: block;
+    }
 }

@@ -6,6 +6,13 @@ import StateDropdownBtn from './components/StateDropdownBtn';
 
 function App() {
 
+  const [selectedState, setSelectedState] = useState("");
+
+  const onStateSelectHandler = (e) => {
+    console.log(e);
+    setSelectedState(e);
+  }
+
   const [data, setData] = useState({});
   
   axios.get("https://love2create.github.io/InteractiveStateMap/src/data/stateData.json").then(response=>{
@@ -14,8 +21,8 @@ function App() {
 
   return (
     <div>
-      <StateDropdownBtn stateMapData={data} />
-      <StateMap stateMapData={data} />
+      <StateDropdownBtn stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState} />
+      <StateMap stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState}/>
       <DataTable stateMapData={data} />
     </div>
   );

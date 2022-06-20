@@ -1,0 +1,13 @@
+.stateData-table__wrapper{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.stateData-table__th{
+    text-align: left;
+    padding: 2px 10px;
+}
+.stateData-table__td{
+    text-align: left;
+    padding: 2px 10px;
+}
