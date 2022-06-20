@@ -21,6 +21,7 @@ function App() {
 
   return (
     <div>
+      <h1>Organic Valley Acres Map</h1>
       <StateDropdownBtn stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState} />
       <StateMap stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState}/>
       <DataTable stateMapData={data} />

@@ -22,11 +22,14 @@
     position: absolute;
     pointer-events: none;
     display: none;
-    background-color: black;
+    background-color: #4a2e1c;
     border: 2px solid white;
     color: white;
     margin: 10px;
     padding: 5px;
+    font-family: ff-tisa-web-pro, serif;
+    font-style: normal;
+    font-weight: 900;
 }
 .hoverMsg.hide{
     display: none;

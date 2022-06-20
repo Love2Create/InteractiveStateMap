@@ -4,7 +4,7 @@
     flex-direction: column;
     padding-top: 10px;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 10px;
 }
 select{
@@ -14,19 +14,27 @@ select{
     background-color: #1ca2ab;
     border: none;
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 16px;
     cursor: inherit;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
-    width: 250px;
+    width: 400px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-select::after {
+.StateDropdownBtn-dropdown__label{
+    font-size: 12px;
+    font-weight: bold;
+    color: #4a2e1c;
+    width:1px;
+    height: 1px;
+    overflow: hidden;
+   }
+/* select::after {
     content: "";
     width: 0.8em;
     height: 0.5em;
     background-color: white;
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-  }
+} */

@@ -40,6 +40,7 @@ const StateMap = (props) => {
         updateMouseY(e.clientY);
     };
 
+
     return (
         <div className="state-map">
             <div className={tempState==='' ? 'hoverMsg hide' : 'hoverMsg'} style={{left:`${currentMouseX}px`, top:`${currentMouseY}px`} }>{tempState}</div>
@@ -57,6 +58,7 @@ const StateMap = (props) => {
                     onMouseEnter={mouseEnterHandler}
                     onMouseLeave={mouseLeaveHandler}
                     onMouseMove={mouseMoveHandler}
+                    onMouseUp={mouseLeaveHandler}
                 />)}
                 {Object.keys(props.stateMapData).filter(item=>props.stateMapData[item].acres === "0").map(item => <path
                     className={props.selectedState === item ? 'selected' : ''} 

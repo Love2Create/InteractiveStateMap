@@ -4,9 +4,9 @@ const Legend = () => {
     return(
         <div className="legend-wrapper">
             <div className="legend-totalAcre">
-                <p className="legend-totalAcre__label">TOTAL CERTIFIED ORGANIC VALLEY</p>
+                <p className="legend-totalAcre__label">TOTAL CERTIFIED ORGANIC VALLEY ACRES</p>
                 <div className="legend-totalAcre__number">
-                    <h2>397,269 ACRES </h2>
+                    <h2>397,269</h2>
                 </div>
             </div>
             <div className="legend-colorInfo">
