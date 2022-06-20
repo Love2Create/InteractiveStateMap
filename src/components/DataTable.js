@@ -4,7 +4,7 @@ const DataTable = (props) => {
 
     return(
         <div className="stateData-table__wrapper">
-            <table>
+            <table summary="state acre table">
                 <thead>
                     <tr>
                         <th className="stateData-table__th">State Name</th>

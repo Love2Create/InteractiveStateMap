@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     height: 65px;
 }
 
@@ -76,5 +76,21 @@
 
 .legend-colorInfo__color__noAcres{
     background-color: #c4c0bc;
+}
+
+@media only screen and (max-width: 480px) {
+    .legend-colorInfo{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+    .legend-colorInfo__box{
+        width: 13px;
+        height: 13px;
+    }
+    .legend-totalAcre__number{
+        letter-spacing: 4px;;
+    }
 }
 

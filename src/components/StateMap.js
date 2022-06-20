@@ -42,7 +42,7 @@ const StateMap = (props) => {
 
 
     return (
-        <div className="state-map">
+        <div className="state-map" aria-hidden="true" role="presentation">
             <div className={tempState==='' ? 'hoverMsg hide' : 'hoverMsg'} style={{left:`${currentMouseX}px`, top:`${currentMouseY}px`} }>{tempState}</div>
             <svg x="0" y="0" width="575" height="356" viewBox="174 100 959 593">
                 {Object.keys(props.stateMapData).filter(item=>props.stateMapData[item].acres != "0").map(item => <path
