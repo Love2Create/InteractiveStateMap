@@ -17,10 +17,10 @@ select{
     border-radius: 16px;
     cursor: inherit;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-align: center;
-    width: 320px;
+    width: 300px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .StateDropdownBtn-dropdown__label > span{
