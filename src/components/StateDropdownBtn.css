@@ -19,7 +19,8 @@ select{
     color: white;
     font-size: 18px;
     font-weight: 600;
-    text-align: center;
+    text-align: center !important;
+    align-items: center;
     width: 300px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -32,11 +33,4 @@ select{
     padding: 0;
     position: absolute;
     width: 1px;
-   }
-/* select::after {
-    content: "";
-    width: 0.8em;
-    height: 0.5em;
-    background-color: white;
-    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-} */
+}

@@ -22,11 +22,7 @@ const StateMap = (props) => {
 
     const mouseEnterHandler = (e) => {
 
-        const acres = e.target.getAttribute('acres');
-        const acresMsg = acres === "0" ? "No Organic Valley Acres" : "Click to Learn More";
-        const tempStateMsg = <p>{e.target.getAttribute('id')}<br />{acresMsg}</p>;
-
-        updateTempState(tempStateMsg);
+        
     }
 
     const mouseLeaveHandler = (e) => {
@@ -36,8 +32,16 @@ const StateMap = (props) => {
     };
 
     const mouseMoveHandler = (e) => {
+
+        const acres = e.target.getAttribute('acres');
+        const acresMsg = acres === "0" ? "No Organic Valley Acres" : "Click to Learn More";
+        const tempStateMsg = <p>{e.target.getAttribute('id')}<br />{acresMsg}</p>;
+
+        updateTempState(tempStateMsg);
+
         updateMouseX(e.clientX);
         updateMouseY(e.clientY);
+        
     };
 
 
@@ -69,7 +73,6 @@ const StateMap = (props) => {
                     stroke="white"
                     strokeWidth="2px"
                     acres={props.stateMapData[item].acres}
-                    // onClick={mouseEnterHandler}
                     onMouseEnter={mouseEnterHandler}
                     onMouseLeave={mouseLeaveHandler}
                     onMouseMove={mouseMoveHandler}
