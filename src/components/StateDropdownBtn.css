@@ -11,7 +11,9 @@ select{
     appearance: none;
     display: flex;
     flex-direction: row;
-    background-color: #1ca2ab;
+    background-color: #e26f27;
+    /* background-color: #1ca2ab; */
+    /* background-color: #17848b; */
     border: none;
     padding: 20px 10px;
     border-radius: 16px;
@@ -33,4 +35,9 @@ select{
     padding: 0;
     position: absolute;
     width: 1px;
+}
+.StateDropdownBtn-defaultOption__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

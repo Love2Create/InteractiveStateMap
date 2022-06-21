@@ -34,8 +34,8 @@ const StateMap = (props) => {
     const mouseMoveHandler = (e) => {
 
         const acres = e.target.getAttribute('acres');
-        const acresMsg = acres === "0" ? "No Organic Valley Acres" : "Click to Learn More";
-        const tempStateMsg = <p>{e.target.getAttribute('id')}<br />{acresMsg}</p>;
+        const acresMsg = acres === "0" ? <p className="hoverMsg__extraInfo">NO ORGANIC VALLEY ACRES</p> : <p className="hoverMsg__extraInfo">CLICK TO LEARN MORE</p>;
+        const tempStateMsg = <p className="temp-msg__stateName">{e.target.getAttribute('id')}<br />{acresMsg}</p>;
 
         updateTempState(tempStateMsg);
 
