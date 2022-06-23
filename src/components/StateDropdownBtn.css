@@ -8,7 +8,7 @@
     margin-top: 10px;
 }
 select{
-    /* appearance: none; */
+    appearance: none;
     display: flex;
     flex-direction: row;
     background-color: #e26f27;
@@ -27,12 +27,12 @@ select{
     width: 300px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-select:after {
+/* select:after {
     content: '\2304';
     font-size: 30px;
     line-height: 23px;
     padding-right: 2px;
-  }
+  } */
 /* .StateDropdownBtn-dropdown__label > span{
     border: 0;
     clip: rect(0 0 0 0);
@@ -48,7 +48,6 @@ select:after {
     flex-direction: row;
     justify-content: space-between;
 }
-
 /* .select::after {
     content: "▼";
     padding: 12px 8px;
