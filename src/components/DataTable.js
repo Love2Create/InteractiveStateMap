@@ -3,7 +3,7 @@ import './DataTable.css';
 const DataTable = (props) => {
 
     return(
-        <div className="stateData-table__wrapper">
+        <section className="stateData-table__wrapper">
             <table summary="state acre table">
                 <thead>
                     <tr>
@@ -21,7 +21,7 @@ const DataTable = (props) => {
                     )}
                 </tbody>
             </table>
-        </div>
+        </section>
     );
 };
 

@@ -8,7 +8,7 @@
     margin-top: 10px;
 }
 select{
-    appearance: none;
+    /* appearance: none; */
     display: flex;
     flex-direction: row;
     background-color: #e26f27;
@@ -23,10 +23,17 @@ select{
     font-weight: 600;
     text-align: center !important;
     align-items: center;
+    justify-content: space-around;
     width: 300px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-.StateDropdownBtn-dropdown__label > span{
+select:after {
+    content: '\2304';
+    font-size: 30px;
+    line-height: 23px;
+    padding-right: 2px;
+  }
+/* .StateDropdownBtn-dropdown__label > span{
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -35,9 +42,23 @@ select{
     padding: 0;
     position: absolute;
     width: 1px;
-}
+} */
 .StateDropdownBtn-defaultOption__wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* .select::after {
+    content: "▼";
+    padding: 12px 8px;
+    position: absolute;
+    right: 100px;
+    top: 100;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    color: red;
+  } */

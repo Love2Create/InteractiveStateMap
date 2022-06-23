@@ -51,6 +51,7 @@
     opacity: 0.65;
 }
 
+
 @media screen and (min-width: 700px)  {
     .hoverMsg{
         display: block;

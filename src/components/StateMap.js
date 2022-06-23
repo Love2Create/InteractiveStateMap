@@ -11,13 +11,13 @@ const StateMap = (props) => {
     const [currentMouseY, updateMouseY] = useState(0);
     const [currentStateShape, setStateShape] = useState('');
 
-
     const clickHandler = (e) => {
         const shape = e.target.getAttribute('d');
         const acresData = e.target.getAttribute('acres');
         const stateData = e.target.getAttribute('id');
         updateCurrentAcres(acresData);
         updateCurrentState(stateData);
+
         setStateShape(shape);
 
         props.onStateSelectHandler(stateData);
@@ -52,11 +52,11 @@ const StateMap = (props) => {
         <div className="state-map" aria-hidden="true" role="presentation">
             <div className={tempState === '' ? 'hoverMsg hide' : 'hoverMsg'} style={{ left: `${currentMouseX}px`, top: `${currentMouseY}px` }}>{tempState}</div>
             <svg x="0" y="0" width="575" height="356" viewBox="174 100 959 593">
-                <defs>
+                {/* <defs>
                     <clipPath id="selectionMask">
                         <path d={currentStateShape} />
                     </clipPath>
-                </defs>
+                </defs> */}
                 <g>
                     {Object.keys(props.stateMapData).filter(item => props.stateMapData[item].acres != "0").map(item => <path
                         className={props.selectedState === item ? 'selected' : ''}
@@ -89,9 +89,9 @@ const StateMap = (props) => {
                         onMouseMove={mouseMoveHandler}
                     />)}
                 </g>
-                <g className="line-pattern">
-                    {[...new Array(300).keys()].map(item => <line x1="0" y1={-100 + item * 10} x2="1500" y2={-600 + item * 10} stroke="#ffffff" strokeWidth="2px" clip-path="url(#selectionMask)" />)}
-                </g>
+                {/* <g className="line-pattern">
+                    {[...new Array(300).keys()].map(item => <line x1="0" y1={-100 + item * 10} x2="1500" y2={-600 + item * 10} stroke="#ffffff" strokeWidth="2px" clipPath="url(#selectionMask)" key={item} />)}
+                </g> */}
             </svg>
             <div>
                 <Legend />

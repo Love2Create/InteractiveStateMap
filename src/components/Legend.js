@@ -2,9 +2,9 @@ import './Legend.css';
 
 const Legend = () => {
     return(
-        <div className="legend-wrapper">
+        <section className="legend-wrapper">
             <div className="legend-totalAcre">
-                <p className="legend-totalAcre__label">TOTAL CERTIFIED ORGANIC VALLEY ACRES</p>
+                <div className="legend-totalAcre__label">TOTAL CERTIFIED ORGANIC VALLEY ACRES</div>
                 <div className="legend-totalAcre__number">
                     <h2>397,269</h2>
                 </div>
@@ -24,7 +24,7 @@ const Legend = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     );
 }
 

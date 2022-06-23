@@ -7,6 +7,7 @@ import StateDropdownBtn from './components/StateDropdownBtn';
 function App() {
 
   const [selectedState, setSelectedState] = useState("");
+  const [currentStateShape, setStateShape] = useState('');
 
   const onStateSelectHandler = (e) => {
     console.log(e);

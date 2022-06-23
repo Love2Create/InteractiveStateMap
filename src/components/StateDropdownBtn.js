@@ -11,8 +11,13 @@ const StateDropdownBtn = (props) => {
     return (
         <form className="StateDropdownBtn-wrapper">
             <label className="StateDropdownBtn-dropdown__label">
-                <select title="state selector" id="stateName" value={props.selectedState} onChange={stateSelectHandler}>
-                    <option value="" className="StateDropdownBtn-defaultOption__wrapper">Pick a State</option>
+                <select
+                    variant="standard"
+                    title="state selector"
+                    id="stateName"
+                    value={props.selectedState}
+                    onChange={stateSelectHandler}>
+                    <option value="">Pick a State</option>
                     {Object.keys(props.stateMapData).filter(item => props.stateMapData[item].acres != "0").map(item =>
                         <option key={item} value={item}>
                             {item}:  {props.stateMapData[item].acres} acres

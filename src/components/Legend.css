@@ -30,10 +30,10 @@
     /* background-color: #4a2e1c; */
     /* padding-top: 5px;
     padding-bottom: 6px; */
-    color: #4a2e1c;
+    color: #988c83;
     text-align: center;
-    font-size: 30px;
-    letter-spacing: 7px;
+    font-size: 32px;
+    letter-spacing: 5px;
     /* justify-content: center; */
 }
 
@@ -47,7 +47,7 @@
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
-    height: 60px;
+    height: 65px;
 }
 
 .display-flex{
@@ -94,5 +94,8 @@
     .legend-totalAcre__number{
         letter-spacing: 4px;;
     }
-}
+    .legend-colorInfo{
+        padding-left: 10px;
+    }
 
+}
