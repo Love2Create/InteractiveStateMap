@@ -6,6 +6,7 @@
     align-items: center;
     margin-bottom: 20px;
     margin-top: 10px;
+    position: relative;
 }
 select{
     appearance: none;
@@ -27,37 +28,23 @@ select{
     width: 300px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-/* select:after {
-    content: '\2304';
-    font-size: 30px;
-    line-height: 23px;
-    padding-right: 2px;
-  } */
-/* .StateDropdownBtn-dropdown__label > span{
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
+.StateDropdownBtn-wrapper::after{
+    content: "\003E";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: white;
     position: absolute;
-    width: 1px;
-} */
+    top: 35px;
+    left: 50%;
+    font-weight: 900;
+    pointer-events: none;
+    transform-origin: center;
+    transform: translateX(30px) rotate(90deg);
+    opacity: .5;
+}
 .StateDropdownBtn-defaultOption__wrapper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-/* .select::after {
-    content: "▼";
-    padding: 12px 8px;
-    position: absolute;
-    right: 100px;
-    top: 100;
-    z-index: 1;
-    text-align: center;
-    width: 10%;
-    height: 100%;
-    pointer-events: none;
-    color: red;
-  } */
