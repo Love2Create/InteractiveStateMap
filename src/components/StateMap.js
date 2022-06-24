@@ -37,8 +37,8 @@ const StateMap = (props) => {
     const mouseMoveHandler = (e) => {
 
         const acres = e.target.getAttribute('acres');
-        const acresMsg = acres === "0" ? <p className="hoverMsg__extraInfo">NO ORGANIC VALLEY ACRES</p> : <p className="hoverMsg__extraInfo">CLICK TO LEARN MORE</p>;
-        const tempStateMsg = <p className="temp-msg__stateName">{e.target.getAttribute('id')}<br />{acresMsg}</p>;
+        const acresMsg = acres === "0" ? <div className="hoverMsg__extraInfo">NO ORGANIC VALLEY ACRES</div> : <div className="hoverMsg__extraInfo">CLICK TO LEARN MORE</div>;
+        const tempStateMsg = <div className="temp-msg__stateName">{e.target.getAttribute('id')}<br />{acresMsg}</div>;
 
         updateTempState(tempStateMsg);
 
@@ -58,7 +58,7 @@ const StateMap = (props) => {
                     </clipPath>
                 </defs> */}
                 <g>
-                    {Object.keys(props.stateMapData).filter(item => props.stateMapData[item].acres != "0").map(item => <path
+                    {Object.keys(props.stateMapData).filter(item => props.stateMapData[item].acres !== "0").map(item => <path
                         className={props.selectedState === item ? 'selected' : ''}
                         id={item}
                         key={item}

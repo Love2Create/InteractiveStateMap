@@ -25,7 +25,7 @@ select{
     text-align: center !important;
     align-items: center;
     justify-content: space-around;
-    width: 300px;
+    width: 340px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .StateDropdownBtn-wrapper::after{
@@ -40,7 +40,7 @@ select{
     font-weight: bolder;
     pointer-events: none;
     transform-origin: center;
-    transform: scaleX(1.4) translateX(55px) rotate(90deg);
+    transform: scaleX(1.4) translateX(78px) rotate(90deg);
     opacity: .5;
 }
 .StateDropdownBtn-defaultOption__wrapper{
