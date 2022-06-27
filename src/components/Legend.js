@@ -12,11 +12,11 @@ const Legend = () => {
             <div className="legend-colorInfo">
                 <div className="display-flex">
                     <div className="legend-colorInfo__box legend-colorInfo__color__hasAcres"></div>
-                    <div className="legend-colorInfo__label">HAS ORGANIC VALLEY ACRES</div>
+                    <div className="legend-colorInfo__label">ORGANIC VALLEY ACRES</div>
                 </div>
                 <div className="display-flex">
                     <div className="legend-colorInfo__box legend-colorInfo__box__selected"></div>
-                    <div className="legend-colorInfo__label">HAS ORGANIC VALLEY ACRES (SELECTED)</div>
+                    <div className="legend-colorInfo__label">ORGANIC VALLEY ACRES (SELECTED)</div>
                 </div>
                 <div className="display-flex">
                     <div className="legend-colorInfo__box legend-colorInfo__color__noAcres"></div>

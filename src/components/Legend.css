@@ -67,11 +67,11 @@
 }
 
 .legend-colorInfo__color__hasAcres{
-    background-color:#988c83;
+    background-color:#988b83;
 }
 
 .legend-colorInfo__box__selected{
-    background-color: #e26f27;
+    background-color: #1da2ab;
     /* background-color: #1ca2ab; */
     /* background-color: #17848b; */
 }
@@ -95,7 +95,7 @@
         letter-spacing: 4px;;
     }
     .legend-colorInfo{
-        padding-left: 10px;
+        padding-left: 12px;
     }
 
 }
