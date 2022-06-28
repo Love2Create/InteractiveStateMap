@@ -203,5 +203,5 @@ const stateData = `
   }
 `;
 
-const parseData = JASON.parse(stateData);
+const parseData = JSON.parse(stateData);
 export default parseData;

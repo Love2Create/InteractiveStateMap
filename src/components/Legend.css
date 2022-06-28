@@ -4,7 +4,7 @@
     /* padding: 0px 10px; */
     width:100vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,7 @@
 .legend-sectionWrapper{
     display: flex;
     flex-direction: row;
+    padding-top: 5px;
 }
 
 
@@ -38,8 +39,8 @@
 .legend-totalAcre__number{
     font-family: Franklin-gothic-compressed,sans-serif;
     text-align: center;
-    font-size: 48px;
-    letter-spacing: 2px;
+    font-size: 50px;
+    letter-spacing: 3px;
     /* margin-top: -10px; */
     font-weight: 700;
 }
@@ -60,8 +61,8 @@
     align-items: left;
     justify-content: space-between;
     height: 60px;
-    padding-left: 25px;
-    margin-top:10px;
+    /* padding-left: 25px; */
+    margin-top:50px;
 }
 /* color boxes */
 .legend-colorInfo__colorBox{
@@ -89,6 +90,10 @@
 
 /* ---------- legend - media query ---------- */
 @media only screen and (max-width: 480px) {
+
+    .legend.wrapper{
+        flex-direction: column;
+    }
 
     .legend-colorInfo__mainWrapper{
         display: flex;

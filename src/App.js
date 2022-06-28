@@ -3,12 +3,11 @@ import axios from 'axios';
 import { useState } from 'react';
 import DataTable from './components/DataTable';
 import StateDropdownBtn from './components/StateDropdownBtn';
-
-const stateData = {
-  
-}
+import stateData from '../src/stateData.js';
 
 function App() {
+
+  // console.log(stateData);
 
   const [selectedState, setSelectedState] = useState("");
   const [currentStateShape, setStateShape] = useState('');
