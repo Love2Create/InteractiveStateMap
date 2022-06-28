@@ -4,7 +4,7 @@
     /* padding: 0px 10px; */
     width:100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -61,8 +61,8 @@
     align-items: left;
     justify-content: space-between;
     height: 60px;
-    /* padding-left: 25px; */
-    margin-top:50px;
+    padding-left: 25px;
+    /* margin-top:50px; */
 }
 /* color boxes */
 .legend-colorInfo__colorBox{
@@ -102,7 +102,7 @@
         justify-content: space-between;;
         height: 50px;
         margin-top: 40px;
-        padding-left: 0px;
+        /* padding: 0; */
     }
 
 }
