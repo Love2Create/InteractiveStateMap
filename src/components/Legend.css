@@ -1,7 +1,7 @@
 /* -------- legend - wrapper -------- */
 .legend-wrapper{
     color: #4a2e1c;
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     width:100vw;
     display: flex;
     flex-direction: row;
@@ -29,24 +29,24 @@
 
 /* total acres info */
 .legend-totalAcre__label{
- font-size: 11px;
+ font-size: 13px;
  font-weight: bold;
  text-align: center;
  margin-left:-4px;
  /* margin-top: 2px; */
 }
 .legend-totalAcre__number{
-    font-family: clarendon-urw, serif;
+    font-family: Franklin-gothic-compressed,sans-serif;
     text-align: center;
     font-size: 48px;
-    letter-spacing: 5px;
-    margin-top: -10px;
+    letter-spacing: 2px;
+    /* margin-top: -10px; */
 }
 .superscript{
-    font-size: 15px;
+    font-size: 20px;
 }
 .legend-disclaimer{
-    font-size: 8px;
+    font-size: 10px;
     text-transform: uppercase;
 }
 
@@ -57,9 +57,10 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: space-between;;
+    justify-content: space-between;
     height: 60px;
     padding-left: 25px;
+    margin-top:10px;
 }
 /* color boxes */
 .legend-colorInfo__colorBox{
@@ -67,17 +68,17 @@
     height: 13px;
 }
 .legend-colorInfo__colorBox__hasAcres{
-    background-color:#9ad2d5;
+    background-color:#a6d0d4;
 }
 .legend-colorInfo__colorBox__selected{
     background-color: #1da2ab;
 }
 .legend-colorInfo__colorBox__noAcres{
-    background-color: #c4c0bc;
+    background-color: #d7d6d3;
 }
 /* color label */
 .legend-colorInfo__colorBox__label{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     padding-left: 5px;
     padding-right: 5px;

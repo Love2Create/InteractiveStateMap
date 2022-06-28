@@ -9,12 +9,11 @@
     position: relative;
 }
 select{
+    font-family: franklin-gothic-urw, sans-serif;
     appearance: none;
     display: flex;
     flex-direction: row;
     background-color: #1da2ab;
-    /* background-color: #1ca2ab; */
-    /* background-color: #17848b; */
     border: none;
     padding: 20px 10px;
     border-radius: 16px;
@@ -22,7 +21,6 @@ select{
     color: white;
     font-size: 18px;
     font-weight: 600;
-    /* text-align: center !important; */
     align-items: center;
     justify-content: space-around;
     width: 340px;

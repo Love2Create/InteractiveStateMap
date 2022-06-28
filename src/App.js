@@ -4,6 +4,10 @@ import { useState } from 'react';
 import DataTable from './components/DataTable';
 import StateDropdownBtn from './components/StateDropdownBtn';
 
+const stateData = {
+  
+}
+
 function App() {
 
   const [selectedState, setSelectedState] = useState("");
@@ -23,11 +27,9 @@ function App() {
   return (
     <main>
       <h1>Organic Valley Acres Map</h1>
-      <div className="wrapper">
-        <DataTable stateMapData={data} />
-        <StateDropdownBtn stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState} />
-        <StateMap stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState}/>
-      </div>
+      <DataTable stateMapData={data} />
+      <StateDropdownBtn stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState} />
+      <StateMap stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState}/>
     </main>
   );
 }

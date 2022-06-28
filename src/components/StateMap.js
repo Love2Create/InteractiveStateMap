@@ -63,7 +63,7 @@ const StateMap = (props) => {
                         id={item}
                         key={item}
                         d={props.stateMapData[item].shape}
-                        fill="#9ad2d5"
+                        fill="#a6d0d4"
                         stroke="white"
                         strokeWidth="2px"
                         acres={props.stateMapData[item].acres}
@@ -80,7 +80,7 @@ const StateMap = (props) => {
                         id={item}
                         key={item}
                         d={props.stateMapData[item].shape}
-                        fill="#c4c0bc"
+                        fill="#d7d6d3"
                         stroke="white"
                         strokeWidth="2px"
                         acres={props.stateMapData[item].acres}
