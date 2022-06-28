@@ -3,24 +3,34 @@ import './Legend.css';
 const Legend = () => {
     return(
         <section className="legend-wrapper">
-            <div className="legend-totalAcre">
+
+            {/* ---------- total acres ---------- */}
+            <div className="legend-totalAcre__wrapper">
                 <div className="legend-totalAcre__label">TOTAL CERTIFIED ORGANIC VALLEY ACRES</div>
                 <div className="legend-totalAcre__number">
                     <h2>397,269</h2>
                 </div>
             </div>
-            <div className="legend-colorInfo">
-                <div className="display-flex">
-                    <div className="legend-colorInfo__box legend-colorInfo__color__hasAcres"></div>
-                    <div className="legend-colorInfo__label">ORGANIC VALLEY ACRES</div>
+
+            {/* ---------- colors ---------- */}
+            <div className="legend-colorInfo__mainWrapper">
+
+                {/* with acres - default */}
+                <div className="legend-sectionWrapper">
+                    <div className="legend-colorInfo__colorBox legend-colorInfo__colorBox__hasAcres"></div>
+                    <div className="legend-colorInfo__colorBox__label">ORGANIC VALLEY ACRES</div>
                 </div>
-                <div className="display-flex">
-                    <div className="legend-colorInfo__box legend-colorInfo__box__selected"></div>
-                    <div className="legend-colorInfo__label">ORGANIC VALLEY ACRES (SELECTED)</div>
+
+                {/* with acres - selected */}
+                <div className="legend-sectionWrapper">
+                    <div className="legend-colorInfo__colorBox legend-colorInfo__colorBox__selected"></div>
+                    <div className="legend-colorInfo__colorBox__label">ORGANIC VALLEY ACRES (SELECTED)</div>
                 </div>
-                <div className="display-flex">
-                    <div className="legend-colorInfo__box legend-colorInfo__color__noAcres"></div>
-                    <div className="legend-colorInfo__label">NO ORGANIC VALLEY ACRES</div>
+
+                {/* no acres */}
+                <div className="legend-sectionWrapper">
+                    <div className="legend-colorInfo__colorBox legend-colorInfo__colorBox__noAcres"></div>
+                    <div className="legend-colorInfo__colorBox__label">NO ORGANIC VALLEY ACRES</div>
                 </div>
             </div>
 

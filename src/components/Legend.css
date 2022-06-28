@@ -1,4 +1,23 @@
+/* -------- legend - fonts -------- */
+@import url("https://p.typekit.net/p.css?s=1&k=hsx7nui&ht=tk&f=4455.4616.5018.5045.9755.12785.12786.12731.12094.12095&a=1366101&app=typekit&e=css");
+
+@font-face {
+    font-family:"clarendon-urw";
+    src:url("https://use.typekit.net/af/bcd454/0000000000000000000178eb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/bcd454/0000000000000000000178eb/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/bcd454/0000000000000000000178eb/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"ff-tisa-web-pro";
+src:url("https://use.typekit.net/af/8bcf67/00000000000000003b9b0789/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/8bcf67/00000000000000003b9b0789/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/8bcf67/00000000000000003b9b0789/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+
+
+/* -------- legend - wrapper -------- */
 .legend-wrapper{
+    color: #4a2e1c;
     padding: 0px 10px;
     width:100vw;
     display: flex;
@@ -7,95 +26,87 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    height: 65px;
+}
+.legend-sectionWrapper{
+    display: flex;
+    flex-direction: row;
 }
 
-.legend-totalAcre{
-    /* padding: 5px; */
-    height: 65px;
+
+/* -------- legend - total acres number -------- */
+
+/* wrapper */
+.legend-totalAcre__wrapper{
+    height: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.legend-totalAcre__label{
- font-size: 10px;
- font-weight: bold;
-}
-
-.legend-totalAcre__number{
-    font-family: ff-tisa-web-pro, serif;
-    font-style: normal;
-    font-weight: 900;
-    /* background-color: #4a2e1c; */
-    /* padding-top: 5px;
-    padding-bottom: 6px; */
-    color: #46301f;
-    text-align: center;
-    font-size: 32px;
-    letter-spacing: 5px;
-    /* justify-content: center; */
-}
-
-
-
-/* -- legend color information -- */
-
-.legend-colorInfo{
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: space-between;
-    height: 65px;
-}
-
-.display-flex{
-    display: flex;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
-.legend-colorInfo__label{
-    font-size: 10px;
-    font-weight: bold;
-    padding-left: 5px;
+/* total acres info */
+.legend-totalAcre__label{
+ font-size: 11px;
+ font-weight: bold;
+ text-align: center;
+ margin-left:-4px;
+ margin-top: 2px;
+}
+.legend-totalAcre__number{
+    font-family: clarendon-urw, serif;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-top: -10px;
 }
 
-.legend-colorInfo__box{
+
+
+/* ---------- legend - color boxes ---------- */
+
+/* wrapper */
+.legend-colorInfo__mainWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;;
+    height: 60px;
+    padding-left: 25px;
+}
+/* color boxes */
+.legend-colorInfo__colorBox{
     width: 13px;
     height: 13px;
 }
-
-.legend-colorInfo__color__hasAcres{
-    background-color:#bfd9dc;
+.legend-colorInfo__colorBox__hasAcres{
+    background-color:#9ad2d5;
 }
-
-.legend-colorInfo__box__selected{
+.legend-colorInfo__colorBox__selected{
     background-color: #1da2ab;
-    /* background-color: #1ca2ab; */
-    /* background-color: #17848b; */
 }
-
-.legend-colorInfo__color__noAcres{
+.legend-colorInfo__colorBox__noAcres{
     background-color: #c4c0bc;
 }
+/* color label */
+.legend-colorInfo__colorBox__label{
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
+
+
+/* ---------- legend - media query ---------- */
 @media only screen and (max-width: 480px) {
-    .legend-colorInfo{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+
+    .legend-colorInfo__mainWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-between;;
         height: 50px;
-    }
-    .legend-colorInfo__box{
-        width: 13px;
-        height: 13px;
-    }
-    .legend-totalAcre__number{
-        letter-spacing: 4px;;
-    }
-    .legend-colorInfo{
-        padding-left: 12px;
+        margin-top: 20px;
     }
 
 }
