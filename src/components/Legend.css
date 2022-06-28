@@ -1,20 +1,3 @@
-/* -------- legend - fonts -------- */
-@import url("https://p.typekit.net/p.css?s=1&k=hsx7nui&ht=tk&f=4455.4616.5018.5045.9755.12785.12786.12731.12094.12095&a=1366101&app=typekit&e=css");
-
-@font-face {
-    font-family:"clarendon-urw";
-    src:url("https://use.typekit.net/af/bcd454/0000000000000000000178eb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/bcd454/0000000000000000000178eb/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/bcd454/0000000000000000000178eb/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
-}
-
-@font-face {
-font-family:"ff-tisa-web-pro";
-src:url("https://use.typekit.net/af/8bcf67/00000000000000003b9b0789/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/8bcf67/00000000000000003b9b0789/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/8bcf67/00000000000000003b9b0789/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
-}
-
-
-
 /* -------- legend - wrapper -------- */
 .legend-wrapper{
     color: #4a2e1c;
@@ -50,17 +33,22 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
  font-weight: bold;
  text-align: center;
  margin-left:-4px;
- margin-top: 2px;
+ /* margin-top: 2px; */
 }
 .legend-totalAcre__number{
     font-family: clarendon-urw, serif;
     text-align: center;
-    font-size: 32px;
+    font-size: 48px;
     letter-spacing: 5px;
     margin-top: -10px;
 }
-
-
+.superscript{
+    font-size: 15px;
+}
+.legend-disclaimer{
+    font-size: 8px;
+    text-transform: uppercase;
+}
 
 /* ---------- legend - color boxes ---------- */
 
@@ -106,7 +94,8 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
         align-items: left;
         justify-content: space-between;;
         height: 50px;
-        margin-top: 20px;
+        margin-top: 40px;
+        padding-left: 0px;
     }
 
 }

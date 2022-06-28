@@ -7,9 +7,8 @@ const Legend = () => {
             {/* ---------- total acres ---------- */}
             <div className="legend-totalAcre__wrapper">
                 <div className="legend-totalAcre__label">TOTAL CERTIFIED ORGANIC VALLEY ACRES</div>
-                <div className="legend-totalAcre__number">
-                    <h2>397,269</h2>
-                </div>
+                <div className="legend-totalAcre__number">397,269<sup className="superscript">*</sup></div>
+                <div className="legend-disclaimer">* Dairy acres only</div>
             </div>
 
             {/* ---------- colors ---------- */}

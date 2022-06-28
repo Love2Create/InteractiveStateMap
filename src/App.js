@@ -23,9 +23,11 @@ function App() {
   return (
     <main>
       <h1>Organic Valley Acres Map</h1>
-      <DataTable stateMapData={data} />
-      <StateDropdownBtn stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState} />
-      <StateMap stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState}/>
+      <div className="wrapper">
+        <DataTable stateMapData={data} />
+        <StateDropdownBtn stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState} />
+        <StateMap stateMapData={data} onStateSelectHandler={onStateSelectHandler} selectedState={selectedState}/>
+      </div>
     </main>
   );
 }
